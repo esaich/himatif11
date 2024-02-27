@@ -64,7 +64,7 @@
          <td> {{ $anggota->nama }} </td>
          <td> {{ $anggota->nim }} </td>
          <td> {{ $anggota->kelas }} </td>
-         <!-- <td> {{ $anggota->angkatan }} </td> -->
+         <!-- <td> {{ $anggota->angkatan }} </td> tidak ada kolom anggota brok -->
          <td> {{ $anggota->tanggal_lahir }} </td>
          <td> {{ $anggota->no_wa }} </td>
          <td> {{ $anggota->email }} </td>
@@ -73,10 +73,10 @@
          <td> {{ $anggota->facebook }} </td>
          <td> {{ $anggota->twitter }} </td>
          <td> {{ $anggota->instagram }} </td>
-         <!-- <td> {{ $anggota->tiktok }} </td> -->
-         <!-- <td> {{ $anggota->lingkedin }} </td> -->
+         <!-- <td> {{ $anggota->tiktok }} </td> tidak ada kolom tiktok brok -->
+         <!-- <td> {{ $anggota->linkedin }} </td> tidak ada kolom linkedin brok -->
          <td> {{ $anggota->foto }} </td>
-         <!-- <td> {{ $anggota->ksb_id }} </td> -->
+         <!-- <td> {{ $anggota->ksb_id }} ngetest aja brok </td> -->
          <td> 
              <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                  <button type="button" class="btn btn-success">Lihat</button>

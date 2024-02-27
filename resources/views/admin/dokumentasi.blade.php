@@ -27,28 +27,27 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>Dokumentasi</th>
-                      <th>Proker</th>
-                      <th>Waktu</th>
+                      <th>No.</th>
                       <th>Lokasi</th>
-                      <th>Fitur</th>
+                      <th>Waktu</th>
+                      <th>Foto</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
-                      <th>Dokumentasi</th>
-                      <th>Proker</th>
-                      <th>Waktu</th>
+                      <th>No.</th>
                       <th>Lokasi</th>
-                      <th>Fitur</th>
+                      <th>Waktu</th>
+                      <th>Foto</th>
                     </tr>
                   </tfoot>
                   <tbody>
+                    @foreach ($listDokumentasi as $dokumentasi)
                     <tr>
-                      <td><img src="https://source.unsplash.com/100x100" alt="ini foto eror"></td>
-                      <td>Technoclub</td>
-                      <td>17-07-2024</td>
-                      <td>ubp karawang
+                      <td> {{$dokumentasi->id}} </td>
+                      <td> {{$dokumentasi->lokasi}} </td>
+                      <td> {{$dokumentasi->waktu}} </td>
+                      <td> {{$dokumentasi->foto}} </td>
                       </td>
                       <td>
                         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
@@ -62,6 +61,7 @@
                       </td>
 
                     </tr>
+                    @endforeach
                   </tbody>
                 </table>
               </div>

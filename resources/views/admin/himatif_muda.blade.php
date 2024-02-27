@@ -29,8 +29,8 @@
                                             <th>Nama</th>
                                             <th>Kelas</th>
                                             <th>Angkatan</th>
-                                            <th>Email</th>
                                             <th>No WA</th>
+                                            <th>Email</th>
                                             <th>Program Kerja</th>
                                             <th>Fitur</th>
                                         </tr>
@@ -41,21 +41,22 @@
                                             <th>Nama</th>
                                             <th>Kelas</th>
                                             <th>Angkatan</th>
-                                            <th>Email</th>
                                             <th>No WA</th>
+                                            <th>Email</th>
                                             <th>Program Kerja</th>
                                             <th>Fitur</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
+                                        @foreach ($listHimatifMuda as $himud)
                                         <tr>
-                                            <td>NIM</td>
-                                            <td>Nama</td>
-                                            <td>Kelas</td>
-                                            <td>Angkatan</td>
-                                            <td>Email</td>
-                                            <td>089877889900</td>
-                                            <td>Program Kerja</td>
+                                            <td> {{$himud->nim}} </td>
+                                            <td>  {{$himud->nama}} </td>
+                                            <td>  {{$himud->kelas}} </td>
+                                            <td>  {{$himud->angkatan}} </td>
+                                            <td>  {{$himud->no_wa}} </td>
+                                            <td>  {{$himud->email}} </td>
+                                            <td>  {{$himud->proker_id}} </td>
                                             <td>
                                                 <div class="btn-group" role="group"
                                                     aria-label="Basic mixed styles example">
@@ -68,6 +69,7 @@
                                                 </div>
                                             </td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

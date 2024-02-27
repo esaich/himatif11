@@ -28,6 +28,7 @@
                                             <th>Nama</th>
                                             <th>Donasi</th>
                                             <th>No WA</th>
+                                            <th>Email</th>
                                             <th>Bukti Pembayaran</th>
                                             <th>Program Kerja</th>
                                             <th>Fitur</th>
@@ -38,18 +39,21 @@
                                             <th>Nama</th>
                                             <th>Donasi</th>
                                             <th>No WA</th>
+                                            <th>Email</th>
                                             <th>Bukti Pembayaran</th>
                                             <th>Program Kerja</th>
                                             <th>Fitur</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
+                                        @foreach ($listDonasi as $donasi)
                                         <tr>
-                                            <td>Nama</td>
-                                            <td>Donasi</td>
-                                            <td>089888907689</td>
-                                            <td>Bukti Pembayaran</td>
-                                            <td>Program Kerja</td>
+                                            <td> {{$donasi->nama}} </td>
+                                            <td> {{$donasi->donasi}} </td>
+                                            <td> {{$donasi->no_wa}} </td>
+                                            <td> {{$donasi->email}} </td>
+                                            <td> {{$donasi->bukti_pembayaran}} </td>
+                                            <td> {{$donasi->proker_id}} </td>
                                             <td>
                                                 <div class="btn-group" role="group"
                                                     aria-label="Basic mixed styles example">
@@ -62,6 +66,7 @@
                                                 </div>
                                             </td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
