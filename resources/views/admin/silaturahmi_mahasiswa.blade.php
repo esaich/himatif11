@@ -46,13 +46,15 @@
                             </tr>
                         </tfoot>
                         <tbody>
+                            @foreach ($listSilaturahmiMhs as $item)
+                        
                             <tr>
-                                <td>Nama</td>
-                                <td>Kelas</td>
-                                <td>Angkatan</td>
-                                <td>0838888</td>
-                                <td>Bukti Pendaftaran</td>
-                                <td>Program Kerja</td>
+                                <td>{{$item->nama}}</td>
+                                <td>{{$item->kelas}}</td>
+                                <td>{{$item->angkatan}}</td>
+                                <td>{{$item->no_wa}}</td>
+                                <td>{{$item->bukti_pembayaran}}</td>
+                                <td>{{$item->proker_id}}</td>
                                 <td>
                                     <div class="btn-group" role="group"
                                         aria-label="Basic mixed styles example">
@@ -65,6 +67,7 @@
                                     </div>
                                 </td>
                             </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

@@ -50,15 +50,16 @@
             </tr>
           </tfoot>
           <tbody>
+            @foreach ($listPemesananPDH as $pdh)
             <tr>
-              <td>21416255201204</td>
-              <td>Deni Rizki Agustian</td>
-              <td>IF21B</td>
-              <td>21</td>
-              <td>089817846583</td>
-              <td>L</td>
-              <td><img src="img/hp.jpg" height="170"  alt="ini foto eror"></td>
-              <td>Program Kerja</td>
+              <td>{{$pdh->nim}}</td>
+              <td>{{$pdh->nama}}</td>
+              <td>{{$pdh->kelas}}</td>
+              <td>{{$pdh->angkatan}}</td>
+              <td>{{$pdh->no_wa}}</td>
+              <td>{{$pdh->ukuran}}</td>
+              <td>{{$pdh->bukti_pembayaran}}</td>
+              <td>{{$pdh->proker_id}}</td>
               <td>
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                   <button type="button" class="btn  btn-success border-0 btn-sm" data-toggle="modal"
@@ -70,6 +71,8 @@
                 </div>
               </td>
             </tr>
+            @endforeach
+           
           </tbody>
         </table>
       </div>

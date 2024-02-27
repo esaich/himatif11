@@ -42,10 +42,11 @@
                         </tr>
                     </tfoot>
                     <tbody>
+                        @foreach ($listProker as $proker)
                         <tr>
-                            <td>UTD 7</td>
-                            <td>17-08-2024</td>
-                            <td>ristek</td>
+                            <td>{{ $proker->nama }}</td>
+                            <td>{{ $proker->waktu }}</td>
+                            <td>{{ $proker->dokumentasi_id }}</td>
                             <td>
                                 <div class="btn-group" role="group"
                                     aria-label="Basic mixed styles example">
@@ -58,7 +59,7 @@
                                 </div>
                             </td>
                         </tr>
-
+                        @endforeach
                     </tbody>
                 </table>
             </div>

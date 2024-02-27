@@ -57,18 +57,18 @@
               </tr>
             </tfoot>
             <tbody>
+              @foreach ($listOprec as $oprec)
               <tr>
-                <td>21416255201215</td>
-                <td>Gozali</td>
-                <td>IF21B</td>
-                <td>2021</td>
-                <td>No WA</td>
-                <td>Acara</td>
-                <td>yes</td>
-                <td>konsumsi</td>
-                <td>Mantap</td>
-                <td>Iya Dong</td>
-                <td>sportif</td>
+                <td>{{ $oprec->nim }}</td>
+                <td>{{ $oprec->nama }}</td>
+                <td>{{ $oprec->kelas }}</td>
+                <td>{{ $oprec->angkatan }}</td>
+                <td>{{ $oprec->no_wa }}</td>
+                <td>{{ $oprec->acara }}</td>
+                <td>{{ $oprec->email }}</td>
+                <td>{{ $oprec->divisi_1 }}</td>
+                <td>{{ $oprec->alasan }}</td>
+                <td>{{ $oprec->sadah_daftar }}</td>
                 <td>
                   <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                     <button type="button" class="btn  btn-success border-0 btn-sm" data-toggle="modal"
@@ -80,6 +80,7 @@
                   </div>
                 </td>
               </tr>
+              @endforeach
             </tbody>
           </table>
         </div>

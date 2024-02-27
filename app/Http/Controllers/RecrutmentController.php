@@ -9,6 +9,6 @@ class RecrutmentController extends Controller
 {
     public function show(){
         $recrutment = Recrutment::all();
-        return view('admin.recrutment',['listRecrutment' => $recrutment]);
+        return view('admin.recrutment',['listOprec' => $recrutment]);
     }
 }
