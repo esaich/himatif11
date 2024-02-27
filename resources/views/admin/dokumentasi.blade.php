@@ -31,6 +31,7 @@
                       <th>Lokasi</th>
                       <th>Waktu</th>
                       <th>Foto</th>
+                      <th>Fitur</th>
                     </tr>
                   </thead>
                   <tfoot>
@@ -39,6 +40,7 @@
                       <th>Lokasi</th>
                       <th>Waktu</th>
                       <th>Foto</th>
+                      <th>Fitur</th>
                     </tr>
                   </tfoot>
                   <tbody>
