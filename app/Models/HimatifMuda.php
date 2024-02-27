@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class HimatifMuda extends Model
 {
     use HasFactory;
+    protected $table = 'himatif_muda';
 }

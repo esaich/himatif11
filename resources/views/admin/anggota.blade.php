@@ -59,19 +59,24 @@
          </tr>
         </tfoot>
       <tbody>
+        @foreach($listAnggota as $anggota)
        <tr>
-         <td>Gozali</td>
-         <td>21416255201215</td>
-         <td>IF21B</td>
-         <td>17-06-2003</td>
-         <td>083815906967</td>
-         <td>if21.gozali@mhs.ubpkarawang.ac.id</td>
-         <td>Ketua Departemen Penristek</td>
-         <td>Penristek</td>
-         <td>Facebook</td>
-         <td>Instagram</td>
-         <td>Twiter</td>
-         <td>Foto</td>
+         <td> {{ $anggota->nama }} </td>
+         <td> {{ $anggota->nim }} </td>
+         <td> {{ $anggota->kelas }} </td>
+         <!-- <td> {{ $anggota->angkatan }} </td> -->
+         <td> {{ $anggota->tanggal_lahir }} </td>
+         <td> {{ $anggota->no_wa }} </td>
+         <td> {{ $anggota->email }} </td>
+         <td> {{ $anggota->jabatan }} </td>
+         <td> {{ $anggota->departement_id }} </td>
+         <td> {{ $anggota->facebook }} </td>
+         <td> {{ $anggota->twitter }} </td>
+         <td> {{ $anggota->instagram }} </td>
+         <!-- <td> {{ $anggota->tiktok }} </td> -->
+         <!-- <td> {{ $anggota->lingkedin }} </td> -->
+         <td> {{ $anggota->foto }} </td>
+         <!-- <td> {{ $anggota->ksb_id }} </td> -->
          <td> 
              <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                  <button type="button" class="btn btn-success">Lihat</button>
@@ -80,49 +85,8 @@
                </div>
          </td>
        </tr>
-       <tr>
-         <td>Gozali</td>
-         <td>21416255201215</td>
-         <td>IF21B</td>
-         <td>17-06-2003</td>
-         <td>083815906967</td>
-         <td>if21.gozali@mhs.ubpkarawang.ac.id</td>
-         <td>Ketua Departemen Penristek</td>
-         <td>Penristek</td>
-         <td>Facebook</td>
-         <td>Instagram</td>
-         <td>Twiter</td>
-         <td>Foto</td>
-         <td> 
-             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                 <button type="button" class="btn btn-success">Lihat</button>
-                 <button type="button" class="btn btn-warning">Edit</button>
-                 <button type="button" class="btn btn-danger">Hapus</button>
-             </div>
-         </td>
-     </tr>
-     <tr>
-         <td>Gozali</td>
-         <td>21416255201215</td>
-         <td>IF21B</td>
-         <td>17-06-2003</td>
-         <td>083815906967</td>
-         <td>if21.gozali@mhs.ubpkarawang.ac.id</td>
-         <td>Ketua Departemen Penristek</td>
-         <td>Penristek</td>
-         <td>Facebook</td>
-         <td>Instagram</td>
-         <td>Twiterrrrr</td>
-         <td> <img src="https://source.unsplash.com/100x100" alt="ini foto eror"></td>
-         <td> 
-             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                 <button type="button" class="btn btn-success">Lihat</button>
-                 <button type="button" class="badge badge-pill badge-success border-0" data-toggle="modal" data-target="#staticBackdrop">Edit <i class="fas fa-fw fa-solid fa-pen-to-square"></i></button>
-                 
-                 <button type="button" class="badge badge-pill badge-danger border-0">Hapus <i class="fas fa-fw fa-solid fa-trash-can"></i></button>
-               </div>
-         </td>
-       </tr>
+       @endforeach
+       
       </tbody>
      </table>
     </div>

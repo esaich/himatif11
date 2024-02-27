@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class DokumentasiController extends Controller
 {
     public function show(){
-        return view('admin.dokumentasi');
+        $dokumentasi = Dokumentasi::all();
+        return view('admin.dokumentasi',['listDokumentasi' => $dokumentasi]);
     }
 }

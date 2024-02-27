@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class HimatifMudaController extends Controller
 {
     public function show(){
-        return view('admin.himatif_muda');
+        $himatif_muda = HimatifMuda::all();
+        return view('admin.himatif_muda',['listHimatifMuda' => $himatif_muda]);
     }
 }

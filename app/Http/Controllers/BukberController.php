@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class BukberController extends Controller
 {
     public function show(){
-        return view('admin.bukber');
+        $bukber = Bukber::all();
+        return view('admin.bukber',['listBukber' => $bukber]);
     }
 }

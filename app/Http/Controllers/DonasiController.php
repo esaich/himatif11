@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class DonasiController extends Controller
 {
     public function show(){
-
-        return view('admin.donasi');
+        $donasi = Donasi::all();
+        return view('admin.donasi', ['listDonasi' => $donasi]);
     }
 }

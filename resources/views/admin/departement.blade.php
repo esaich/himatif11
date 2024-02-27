@@ -47,12 +47,11 @@
           </tr>
          </tfoot>
          <tbody>
+          @foreach($listDepartement as $departemen)
           <tr>
-              <td>Pendidikan Riset Dan Teknologi</td>
-              <td>penristek</td>
-           <td>Penristek adalah departemen yang menjembatani mawasiswa</td>
-           <td>ini foto</td>
-           <td>utd ,techocelub</td>
+              <td> {{$departemen->nama}} </td>
+              <td> {{$departemen->singkata}} </td>
+              <td> {{$departemen->deskripsi}} </td>
            <td> 
             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                 <button type="button" class="btn btn-success">Lihat</button>
@@ -61,6 +60,7 @@
               </div>
         </td>
         </tr>
+        @endforeach
          
           
          </tbody>

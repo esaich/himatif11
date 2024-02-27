@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class SilaturahmiMhsController extends Controller
 {
     public function show() {
-        return view('admin.silaturahmi_mahasiswa');
+        $silaturahmi_mahasiswa = SilaturahmiMhs::all();
+        return view('admin.silaturahmi_mahasiswa',['listSilaturahmiMhs' => $silaturahmi_mahasiswa]);
     }
 }

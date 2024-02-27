@@ -9,6 +9,8 @@ class ProkerController extends Controller
 {
     public function show():View
     {
-        return view('admin.proker');
+        $proker = Proker::all();
+        return view('admin.proker', ['listProker' => $proker]);
+
     }
 }

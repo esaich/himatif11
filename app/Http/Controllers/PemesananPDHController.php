@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class PemesananPDHController extends Controller
 {
     public function show(){
-        return view('admin.pemesanan_pdh');
+        $pemesanan_pdh = PemesananPDH::all();
+        return view('admin.pemesanan_pdh',['listPemesananPDH' => $pemesanan_pdh]);
     }
 }
