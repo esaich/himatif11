@@ -44,7 +44,7 @@
                                         <tbody>
                                             @foreach ($listKritikSaran as $item)   
                                             <tr>
-                                                <td>{{ $item->nama }}</td>
+                                                <td>{{ $item->nama }}</td> // asuuuuuuuu
                                                 <td> {{ $item->email }} </td>
                                                 <td> {{$item->subjek}} </td>
                                                 <td> {{$item->pesan}} </td>

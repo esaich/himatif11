@@ -2,24 +2,16 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Anggota extends Model
+class Ksb extends Model
 {
     use HasFactory;
-    
-    protected $table = 'anggota';
-
-    public function departement(): HasOne
-    {
-        return $this->hasOne(Departement::class);
-    }
 
     public function ksb(): HasOne
     {
         return $this->hasOne(Ksb::class);
     }
-
 }

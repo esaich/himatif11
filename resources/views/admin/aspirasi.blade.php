@@ -29,6 +29,7 @@
                 <th>Kelas</th>
                 <th>Angkatan</th>
                 <th>Email</th>
+                <th>No WA</th>
                 <th>Aspirasi</th>
                 <th>Program Kerja</th>
                 <th>Fitur</th>
@@ -41,20 +42,23 @@
                 <th>Kelas</th>
                 <th>Angkatan</th>
                 <th>Email</th>
+                <th>NO WA</th>
                 <th>Aspirasi</th>
                 <th>Program Kerja</th>
                 <th>Fitur</th>
               </tr>
             </tfoot>
             <tbody>
+              @foreach ($listAspirasi as $aspirasi)
               <tr>
-                <td>21416255201204</td>
-                <td>Deni Rizki Agustian</td>
-                <td>IF21B</td>
-                <td>21</td>
-                <td>deni asu</td>
-                <td>turunkan UKT</td>
-                <td>Program Kerja</td>
+                <td> {{$aspirasi->nim}} </td>
+                <td> {{$aspirasi->nama}} </td>
+                <td> {{$aspirasi->kelas}} </td>
+                <td> {{$aspirasi->angkatan}} </td>
+                <td> {{$aspirasi->email}} </td>
+                <td> {{$aspirasi->no_wa}} </td> 
+                <td> {{$aspirasi->pesan}} </td>
+                <td> {{$aspirasi->proker_id}} </td>
                 <td>
                   <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                     <button type="button" class="btn  btn-success border-0 btn-sm" data-toggle="modal"
@@ -66,6 +70,7 @@
                   </div>
                 </td>
               </tr>
+              @endforeach
             </tbody>
           </table>
         </div>

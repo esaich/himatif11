@@ -28,7 +28,7 @@
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
          <thead>
           <tr>
-           <th>Name</th>
+           <th>Nama</th>
            <th>Singkatan</th>
            <th>Deskripsi</th>
            <th>Foto</th>
@@ -38,7 +38,7 @@
          </thead>
          <tfoot>
           <tr>
-            <th>Name</th>
+            <th>Nama</th>
             <th>Singkatan</th>
             <th>Deskripsi</th>
             <th>Foto</th>
@@ -50,8 +50,10 @@
           @foreach($listDepartement as $departemen)
           <tr>
               <td> {{$departemen->nama}} </td>
-              <td> {{$departemen->singkata}} </td>
+              <td> {{$departemen->singkatan}} </td>
               <td> {{$departemen->deskripsi}} </td>
+              <td> {{$departemen->foto}} </td>
+              <td> {{$departemen->proker_id}} </td>
            <td> 
             <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                 <button type="button" class="btn btn-success">Lihat</button>

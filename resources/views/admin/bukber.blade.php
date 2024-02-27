@@ -30,6 +30,7 @@
                                                 <th>Kelas</th>
                                                 <th>Angkatan</th>
                                                 <th>No Wa</th>
+                                                <th>Email</th>
                                                 <th>Pesanan Bukber</th>
                                                 <th>Bukti Pembayaran</th>
                                                 <th>Program Kerja</th>
@@ -43,6 +44,7 @@
                                                 <th>Kelas</th>
                                                 <th>Angkatan</th>
                                                 <th>No Wa</th>
+                                                <th>Email</th>
                                                 <th>Pesanan Bukber</th>
                                                 <th>Bukti Pembayaran</th>
                                                 <th>Program Kerja</th>
@@ -50,15 +52,17 @@
                                             </tr>
                                         </tfoot>
                                         <tbody>
+                                            @foreach ($listBukber as $bukber)
                                             <tr>
-                                                <td>NIM</td>
-                                                <td>Nama</td>
-                                                <td>Kelas</td>
-                                                <td>Angkatan</td>
-                                                <td>089800987637</td>
-                                                <td>Pesanan Bukber</td>
-                                                <td>Bukti Pembayaran</td>
-                                                <td>Program Kerja</td>
+                                                <td> {{$bukber->nim}} </td>
+                                                <td> {{$bukber->nama}} </td>
+                                                <td> {{$bukber->kelas}} </td>
+                                                <td> {{$bukber->angkatan}} </td>
+                                                <td> {{$bukber->no_wa}} </td>
+                                                <td>{{$bukber->email}}</td>
+                                                <td> {{$bukber->pesanan_bukber}} </td>
+                                                <td> {{$bukber->bukti_pembayaran}} </td>
+                                                <td> {{$bukber->proker_id}} </td>
                                                 <td>
                                                     <div class="btn-group" role="group"
                                                         aria-label="Basic mixed styles example">
@@ -71,6 +75,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
+                                            @endforeach
                                         </tbody>
                                     </table>
                                 </div>
