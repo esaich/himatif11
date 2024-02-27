@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HimatifMuda;
 use Illuminate\Http\Request;
 
 class HimatifMudaController extends Controller

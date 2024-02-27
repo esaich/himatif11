@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Dokumentasi;
 use Illuminate\Http\Request;
 
 class DokumentasiController extends Controller

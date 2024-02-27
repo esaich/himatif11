@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Proker;
 use Illuminate\View\View;
 use Illuminate\Routing\Controller;
 

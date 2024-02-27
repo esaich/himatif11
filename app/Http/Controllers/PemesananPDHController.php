@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\PemesananPDH;
 use Illuminate\Http\Request;
 
 class PemesananPDHController extends Controller

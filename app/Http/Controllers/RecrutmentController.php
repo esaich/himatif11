@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Recrutment;
 use Illuminate\Http\Request;
 
 class RecrutmentController extends Controller
